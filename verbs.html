@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title>Capigoat Verb Trainer</title>
+	<link rel="stylesheet" href="css/verbs.css" />
+	<link rel="icon" type="image/png" href="images/ghead.png" />
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/verbList.js"></script>
+	<script src="js/ui.js"></script>
+	<script src="js/verbs.js"></script>
+</head>
+<body>
+	<header class="box">
+		<div class="headerPaddings fleft" id="imageHeader">CapigoaTrainer <div id="caption">verb trainer</div></div>
+		<div class="headerPaddings fright">[50-100]</div>
+	</header>
+	<div class="content">
+		<div id="messages" class="box">
+			<div class="fleft inline">word <span id="word">1</span>/<span id="totalWords">100</span></div>
+			<div class="fright inline">score <span id="score">1</span>/<span id="totalScore">100</span></div>
+		</div>
+		<div id="dinamic">
+			<div class="currentWord"></div>
+			<div class="downContent">
+				<div class="command">Past Simple:</div>
+				<div class="userInput">
+					<input></input>
+				</div>
+			</div>
+		</div>
+		<div class="dottedBox borderRadius">
+			<div class="dottedBorderCaption">Last Word</div>
+			<div class="lastWord">
+				<div id="word">undefined</div>
+				<div id="firstAnswer">undefined</div>
+				<div id="secondAnswer">undefined</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+	</footer>
+</body>
+</html>
