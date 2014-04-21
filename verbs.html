@@ -11,7 +11,15 @@
 <body>
 	<header class="box">
 		<div class="headerPaddings fleft" id="imageHeader">CapigoaTrainer <div id="caption">verb trainer</div></div>
-		<div class="headerPaddings fright">[50-100]</div>
+		<div class="buttonsPaddings fright radioButtons">
+				<button class="active">Round One<br/><span class="mini">[1~50]</span></button>
+				<button>Round Two<br/><span class="mini">[51~100]</span></button>
+				<button>Round Three<br/><span class="mini">[101~150]</span></button>
+				<button>Round Four<br/><span class="mini">[151~199]</span></button>
+				<button>Round Five<br/><span class="mini">[1~100]</span></button>
+				<button>Round Six<br/><span class="mini">[101~199]</span></button>
+				<button>Round Seven+<br/><span class="mini">[1~199]</span></button>
+		</div>
 	</header>
 	<div class="content">
 		<div id="messages" class="box">
@@ -28,7 +36,18 @@
 			</div>
 		</div>
 		<div class="dottedBox borderRadius">
-			<div class="dottedBorderCaption">Last Word</div>
+			<div class="dottedBorderCaption">Word History</div>
+			<div class="lastWord">
+				<ul>
+					<li>Infinitive</li>
+					<li>Past Simple</li>
+					<li>Past Participle</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="dottedBox borderRadius">
+			<div class="dottedBorderCaption">Score History</div>
 			<div class="lastWord">
 				<div id="word">undefined</div>
 				<div id="firstAnswer">undefined</div>

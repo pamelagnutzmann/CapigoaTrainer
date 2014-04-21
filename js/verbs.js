@@ -7,17 +7,17 @@ currentWord = 0;
 currentPast = 1;
 
 $(function(){
-	$('input').focus();
+	$('.userInput input').focus();
 
-	$('input').on('blur',function()
+	$('.userInput input').on('blur',function()
 	{
-		$('input').focus();
+		$('.userInput input').focus();
 	});
 
 	//changeCurrentWord(verbList[0][0]);
 	changeToSimple();
 
-	$('input').keydown(function(e)
+	$('.userInput input').keydown(function(e)
 	{
 		if(e.which == 9)
 			e.preventDefault();
@@ -31,6 +31,13 @@ $(function(){
 			clearUserInput();
 		}
 
+	});
+
+	$('.radioButtons button').click(function() {
+		if($(this).hasClass("active"))
+			return;
+	    $('.radioButtons button').removeClass('active');
+	    $(this).addClass('active');
 	});
 
 	UI = new userInterface();

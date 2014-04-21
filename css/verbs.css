@@ -3,7 +3,7 @@ html {
 }
 
 body {
-	min-width: 700px;
+	min-width: 810px;
 	margin: 0px;
 
 	background: -moz-linear-gradient(top,  rgba(0,0,0,0.1) 0%, rgba(2,2,2,0.05) 100%); /* FF3.6+ */
@@ -43,7 +43,10 @@ header {
 	display: inline-block;
 	font-size: 20px;
 	margin-top: 5px;
-	
+}
+
+.buttonsPaddings {
+	margin: 2px 20px 0 0;
 }
 
 #caption {
@@ -83,14 +86,33 @@ header {
 	padding: 40px 0;
 } 
 
+.radioButtons button {
+	border: 1px solid #C6BCB5;
+	font-size: 11px;
+	cursor: pointer;
+}
+
+.radioButtons .active {
+	background-color: #C6BCB5;
+	cursor: default;
+}
+
+.mini {
+	font-size: 10px;
+}
+
 #messages {
 	height: 30px;
-
 }
 
 #messages > div {
-	margin: 4px 8px;
+	margin: 1px 8px;
 	padding: 2px 5px 2px 5px;
+}
+
+#word, #score {
+	font-size: 20px;
+	font-weight: bold;
 }
 
 #dinamic {
@@ -146,12 +168,12 @@ header {
 .dottedBox {
 	min-height: 50px;
 	margin: 4px;
-	margin-top: 20px;
-	border: black 2px dotted;
+	margin-top: 40px;
+	border: black 2px solid;
 }
 
 .dottedBox > div:nth-child(2) {
-	margin: 15px 10px;
+	margin: 25px 10px;
 }
 
 .dottedBorderCaption {
