@@ -1,3 +1,8 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
 html {
 	font-family: "Helvetica";
 }
@@ -25,12 +30,12 @@ header {
 	color: white;
 
 	background: #000000; /* Old browsers */
-	background: -moz-linear-gradient(top,  #000000 0%, #212121 35%, #212121 65%, #000000 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(35%,#212121), color-stop(65%,#212121), color-stop(100%,#000000)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #000000 0%,#212121 35%,#212121 65%,#000000 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #000000 0%,#212121 35%,#212121 65%,#000000 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #000000 0%,#212121 35%,#212121 65%,#000000 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #000000 0%,#212121 35%,#212121 65%,#000000 100%); /* W3C */
+	background: -moz-linear-gradient(top,  #000000 0%, #131313 35%, #131313 65%, #000000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(35%,#131313), color-stop(65%,#212121), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #000000 0%,#131313 35%,#131313 65%,#000000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #000000 0%,#131313 35%,#131313 65%,#000000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #000000 0%,#131313 35%,#131313 65%,#000000 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #000000 0%,#131313 35%,#131313 65%,#000000 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 
 	-webkit-box-shadow: 0px 5px 12px 0px rgba(50, 50, 50, 0.63);
@@ -87,14 +92,24 @@ header {
 } 
 
 .radioButtons button {
-	border: 1px solid #C6BCB5;
+	border: none;
+	border-radius: 5px;
 	font-size: 11px;
 	cursor: pointer;
+
+	background: #E6E6E6; /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  #E6E6E6 46%, #C6BCB5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(46%,#E6E6E6), color-stop(100%,#C6BCB5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg,  #E6E6E6 46%,#C6BCB5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg,  #E6E6E6 46%,#C6BCB5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg,  #E6E6E6 46%,#C6BCB5 100%); /* IE10+ */
+	background: linear-gradient(135deg,  #E6E6E6 46%,#C6BCB5 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#C6BCB5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
 
 .radioButtons .active {
-	background-color: #C6BCB5;
-	cursor: default;
+	background: #C6BCB5;
 }
 
 .mini {
@@ -153,10 +168,11 @@ header {
 	outline: 0;
 }
 
-.lastWord > div {
+.wordHistory li,.scoreHistory li {
 	display: inline-block;
 	width: 30%;
 	text-align: center;
+	margin-top: 2px;
 }
 
 .borderRadius {
@@ -182,4 +198,40 @@ header {
 	margin: -10px 0 0 15;
 	padding: 0 4px;
 	background-color: #EDEDED;
+}
+
+.wordHistory, .scoreHistory {
+	text-align: center;
+}
+
+.historyHeader {
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 15px;
+
+}
+
+#wordWrapper {
+	max-height: 106px;
+	overflow: auto;
+}
+
+#wordWrapper ul:first-child {
+	font-weight: bold;
+}
+
+#wordWrapper li:nth-child(2){
+	margin-left: 15px;
+	background-repeat: no-repeat;
+	background-size: 20px;
+	background-position: 30px;
+	background-position: right;
+}
+
+.correct {
+	background-image: url("../images/correct.png");
+}
+
+.wrong {
+	background-image: url("../images/wrong.png");
 }
